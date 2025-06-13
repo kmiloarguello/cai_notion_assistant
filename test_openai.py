@@ -11,7 +11,7 @@ def test_openai_api():
         print("🔑 API key starts with:", api_key[:8])
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": "Hello! What’s the capital of France?"}],
+            messages=[{"role": "user", "content": "Hello! What's the capital of France?"}],
             max_tokens=50
         )
         print("\n✅ Response:", response.choices[0].message.content)
